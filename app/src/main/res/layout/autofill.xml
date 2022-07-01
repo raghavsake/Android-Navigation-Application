@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="80sp"
+    android:background="#1C3DF1"
+    android:clickable="true"
+    android:drawableStart="@drawable/dot"
+    android:elevation="20sp"
+    android:foreground="?selectableItemBackground"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:drawableLeft="@drawable/dot">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dot" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/placename"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="15sp"
+            android:layout_weight="0.5"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="bottom"
+            android:singleLine="true"
+            android:text="Microsoft Corporate"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="15sp" />
+
+        <TextView
+            android:id="@+id/placeaddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="7.5sp"
+            android:layout_marginEnd="15sp"
+            android:layout_weight="0.5"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="top"
+            android:singleLine="true"
+            android:text="Prestige Ferns Galaxy"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_marginRight="15sp"
+            android:layout_marginLeft="10sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

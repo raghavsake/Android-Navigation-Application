@@ -1,0 +1,55 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.mapbox.mapboxsdk.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:animateLayoutChanges="true"
+            android:id="@+id/topLL">
+            <EditText
+                android:id="@+id/where"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="50sp"
+                android:layout_marginEnd="20sp"
+                android:background="#1430C6"
+                android:drawableStart="@drawable/dot"
+                android:drawablePadding="20sp"
+                android:elevation="20sp"
+                android:hint="Where To?"
+                android:paddingStart="15sp"
+                android:paddingEnd="15sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:drawableLeft="@drawable/dot" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/autofill"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="5sp"
+                android:layout_marginStart="20sp"
+                android:visibility="gone"
+                android:background="#586FED"
+                android:layout_marginEnd="20sp"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>
